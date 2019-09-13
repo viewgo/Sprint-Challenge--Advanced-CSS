@@ -170,6 +170,8 @@ nav {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 @media (max-width: 500px) {
   nav {
@@ -191,10 +193,13 @@ footer {
   align-items: center;
 }
 .home .title {
+  position: fixed;
+  top: 0;
   width: 100vw;
-  position: relative;
   margin-left: -50vw;
   left: 50%;
+  overflow: hidden;
+  opacity: 0.99;
   background: #F6F6F6;
   border-bottom: 1px solid #F1F1F1;
   color: #454A59;
@@ -204,6 +209,9 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.home .intro {
+  margin-top: 103px;
 }
 .home .intro h2 {
   padding: 15px;
