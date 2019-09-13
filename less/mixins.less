@@ -6,6 +6,10 @@
     align-items: @ali;
 }
 
+.fill(){
+    width: 100%;
+}
+
 .test(@color: red){
     border: 1px solid @color !important;
 }
@@ -22,5 +26,10 @@
     &:hover{
         background: @color;
         color: @bg;
+    }
+
+    @media @phone{
+        .fill();
+        padding: 5%;
     }
 }
