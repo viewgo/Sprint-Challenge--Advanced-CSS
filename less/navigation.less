@@ -1,1 +1,17 @@
 // Navigation code here
+
+nav{
+    width: 55%;
+    .flex(row, space-evenly, center);  
+    position: sticky;
+    top: 0;  
+
+    @media @phone{
+        width: 100%;
+    }
+
+    a{
+        text-decoration: none;
+        color: @header-font-color;
+    }
+}

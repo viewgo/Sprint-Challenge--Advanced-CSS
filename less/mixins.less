@@ -1,1 +1,35 @@
 // Mixins Here
+.flex(@dir: row, @jus: flex-start, @ali: flex-start){
+    display: flex;
+    flex-direction: @dir;
+    justify-content: @jus;
+    align-items: @ali;
+}
+
+.fill(){
+    width: 100%;
+}
+
+.test(@color: red){
+    border: 1px solid @color !important;
+}
+
+.buttonStyle(@bg, @color){
+    width: 30%;
+    padding: 2%;
+    border: 0px;
+    border-radius: 4px;
+    background: @bg;
+    color: @color;
+    font-size: 1.6rem;
+
+    &:hover{
+        background: @color;
+        color: @bg;
+    }
+
+    @media @phone{
+        .fill();
+        padding: 5%;
+    }
+}
